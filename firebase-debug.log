@@ -1,0 +1,46 @@
+[debug] [2024-03-11T09:31:33.799Z] ----------------------------------------------------------------------
+[debug] [2024-03-11T09:31:33.801Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\orf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-11T09:31:33.802Z] CLI Version:   13.4.1
+[debug] [2024-03-11T09:31:33.802Z] Platform:      win32
+[debug] [2024-03-11T09:31:33.802Z] Node Version:  v18.12.0
+[debug] [2024-03-11T09:31:33.803Z] Time:          Mon Mar 11 2024 11:31:33 GMT+0200 (Israel Standard Time)
+[debug] [2024-03-11T09:31:33.803Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-11T09:31:33.890Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2024-03-11T09:31:33.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-11T09:31:33.895Z] > authorizing via signed-in user (autodotmanage@gmail.com)
+[debug] [2024-03-11T09:31:33.896Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Or\Startups\AutoDot\Demo
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-11T09:32:03.612Z] Using project from CLI flag: salinaka-ecommerce
+[debug] [2024-03-11T09:32:03.615Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/salinaka-ecommerce [none]
+[debug] [2024-03-11T09:32:04.007Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/salinaka-ecommerce 403
+[debug] [2024-03-11T09:32:04.007Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/salinaka-ecommerce {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-03-11T09:32:04.008Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-03-11T09:32:04.150Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\orf\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\orf\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:297:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project salinaka-ecommerce. Please make sure the project exists and your account has permission to access it.
